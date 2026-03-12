@@ -1,7 +1,7 @@
 {
   "name": "mithun-webapp",
   "version": "1.0.0",
-  "description": "Simple Node.js website for Azure",
+  "description": "Node.js web app for Azure",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
