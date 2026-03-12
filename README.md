@@ -9,6 +9,10 @@ The project includes a basic web interface created with **HTML, CSS, and JavaScr
 
 ---
 
+## 🌐 Live Demo
+
+🔗 Live Website: http://mithun-webapp-e2gtgfbad9h2czbc.centralindia-01.azurewebsites.net
+
 ## 🚀 Live Application
 
 The application is deployed on Microsoft Azure and accessible via a public URL.
