@@ -1,10 +1,20 @@
-body{
+body {
 font-family: Arial;
 text-align: center;
 margin-top: 100px;
-background:#f4f6f8;
+background-color: #f4f4f4;
 }
 
-h1{
-color:#0078d4;
+h1 {
+color: #0078D4;
+}
+
+button {
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+background-color: #0078D4;
+color: white;
+border: none;
+border-radius: 5px;
 }
