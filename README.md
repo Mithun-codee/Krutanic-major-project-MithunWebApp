@@ -1,174 +1,170 @@
-# Krutanic Major Project – Mithun Web App
+# ☁️ Azure Web Application Deployment
+### Cloud Computing Internship Project – Krutanic Solutions
 
-## 📌 Project Overview
-
-This project is a simple **Node.js web application** developed as part of my internship at **Krutanic Solutions**.
-The application demonstrates how to build and deploy a web application using **Node.js, Express.js, and cloud hosting on Microsoft Azure**.
-
-The project includes a basic web interface created with **HTML, CSS, and JavaScript**, served through an **Express server** and deployed to the cloud using **GitHub and Azure App Service**.
-
----
-
-## 🌐 Live Demo
-
-🔗 Live Website: http://mithun-webapp-e2gtgfbad9h2czbc.centralindia-01.azurewebsites.net
-
-## 🚀 Live Application
-
-The application is deployed on Microsoft Azure and accessible via a public URL.
-
-Features of the deployed application:
-
-* Simple responsive web page
-* Node.js backend server
-* Cloud deployment
-* Continuous deployment using GitHub
+![Azure](https://img.shields.io/badge/Cloud-Microsoft%20Azure-blue)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-green)
+![GitHub](https://img.shields.io/badge/CI/CD-GitHub%20Actions-black)
+![Status](https://img.shields.io/badge/Deployment-Live-success)
 
 ---
 
-## 🛠️ Technologies Used
+# 📌 Project Overview
 
-**Backend**
+This project demonstrates how to deploy and manage a scalable web application on **Microsoft Azure (Free Tier)**.
 
-* Node.js
-* Express.js
+The application is hosted using **Azure App Service**, connected to **Azure SQL Database**, and monitored using **Azure Application Insights**.
 
-**Frontend**
+The project also integrates **GitHub Actions for Continuous Integration and Continuous Deployment (CI/CD)**.
 
-* HTML
-* CSS
-* JavaScript
-
-**Cloud & DevOps**
-
-* Microsoft Azure App Service
-* GitHub
-* GitHub Actions (CI/CD)
+This project was completed as part of my **Cloud Computing Internship at Krutanic Solutions**.
 
 ---
 
-## 📂 Project Structure
+# 🌍 Live Application
+
+🔗 **Website URL**
+
+https://mithun-webapp-e2gtgfbad9h2czbc.centralindia-01.azurewebsites.net
+
+The application is publicly accessible and deployed on **Azure App Service**.
+
+---
+
+# 🧰 Technologies Used
+
+## Frontend
+- HTML5
+- CSS3
+- JavaScript
+
+## Backend
+- Node.js
+
+## Cloud Platform
+- Microsoft Azure
+
+## DevOps Tools
+- GitHub
+- GitHub Actions
+
+---
+
+# ☁️ Azure Services Used
+
+| Service | Purpose |
+|-------|-------|
+| Azure App Service | Hosting the web application |
+| Azure SQL Database | Cloud database for storing data |
+| Azure Resource Groups | Organizing cloud resources |
+| Application Insights | Monitoring and logging |
+| GitHub Actions | Automated deployment |
+
+---
+
+# 🏗 Cloud Architecture
 
 ```
-Krutanic-major-project-MithunWebApp
+User Browser
+      │
+      ▼
+Azure App Service (Web App Hosting)
+      │
+      ▼
+Azure SQL Database (Cloud Data Storage)
+      │
+      ▼
+Application Insights (Monitoring & Analytics)
+```
+
+---
+
+# 📂 Project Structure
+
+```
+azure-webapp-project
 │
-├── server.js
-├── package.json
 ├── index.html
 ├── style.css
 └── script.js
+│
+├── server.js
+├── package.json
+│
+├── .github/workflows
+│   └── azure-deploy.yml
+│
+└── README.md
 ```
 
 ---
 
-## ⚙️ Installation and Setup
+# 🗄 Database Configuration
 
-### 1️⃣ Clone the repository
+The application connects to **Azure SQL Database**.
 
-```
-git clone https://github.com/your-username/Krutanic-major-project-MithunWebApp.git
-```
+Example SQL table used:
 
-### 2️⃣ Navigate to the project folder
-
-```
-cd Krutanic-major-project-MithunWebApp
-```
-
-### 3️⃣ Install dependencies
-
-```
-npm install
-```
-
-### 4️⃣ Run the application
-
-```
-npm start
-```
-
-The server will start on:
-
-```
-http://localhost:3000
+```sql
+CREATE TABLE Users (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    name VARCHAR(50),
+    email VARCHAR(100)
+);
 ```
 
 ---
 
-## ☁️ Deployment
+# ⚙️ Deployment Process
 
-The application is deployed using **Microsoft Azure App Service**.
+The application uses a **CI/CD pipeline with GitHub Actions**.
 
-Deployment process:
+### Deployment Steps
 
-1. Created a Web App in Azure Portal
-2. Connected the GitHub repository
-3. Configured automatic deployment using GitHub Actions
-4. Azure automatically builds and deploys the application
+1. Create Azure Resource Group  
+2. Create Azure App Service (Free Tier F1)  
+3. Create Azure SQL Database  
+4. Push code to GitHub repository  
+5. Configure GitHub Actions workflow  
+6. Deploy automatically to Azure Web App  
 
-This setup enables **Continuous Integration and Continuous Deployment (CI/CD)**.
-
----
-
-## ⚠️ Challenges Faced
-
-During development and deployment, several issues were encountered:
-
-### 1. Azure Default Page Display
-
-Initially, Azure displayed a default page instead of the application.
-This was resolved by properly connecting the GitHub repository through the Azure Deployment Center.
-
-### 2. Authentication Configuration
-
-An error occurred related to **SCM Basic Authentication being disabled**.
-This was solved by selecting **User-assigned identity authentication** for deployment.
-
-### 3. Emoji Encoding Issue
-
-The rocket emoji displayed as incorrect characters.
-This was fixed by adding UTF-8 encoding in the HTML file.
-
-```
-<meta charset="UTF-8">
-```
+Every push to the **main branch** triggers **automatic deployment**.
 
 ---
 
-## 📚 Learning Outcomes
+# 📊 Monitoring
 
-Through this project, the following concepts were learned:
+The application is monitored using **Azure Application Insights**.
 
-* Node.js server development
-* Express.js web framework
-* Static file hosting
-* Cloud deployment using Azure
-* CI/CD using GitHub Actions
-* Debugging deployment issues
+Monitoring features include:
 
----
-
-## 🎯 Future Improvements
-
-Possible improvements for the project include:
-
-* Adding a database (MongoDB or Azure SQL)
-* Implementing authentication (Login/Signup)
-* Creating multiple web pages
-* Enhancing UI/UX with modern frameworks
-* Adding API endpoints
+- Performance metrics
+- Error tracking
+- Request logging
+- Live traffic monitoring
 
 ---
 
-## 👨‍💻 Author
+# 🎯 Learning Outcomes
 
-**Mithun N**
+Through this project, I learned:
 
-Internship Project
+- Cloud application deployment
+- Azure App Service configuration
+- Azure SQL Database integration
+- CI/CD pipeline implementation
+- Cloud monitoring using Application Insights
+- GitHub integration with Azure
+
+---
+
+# 👨‍💻 Author
+
+**Mithun N**  
+Cloud Computing Intern  
 Krutanic Solutions
 
 ---
 
-## 📄 License
+# 📜 License
 
-This project was developed for educational and internship purposes.
+This project is created for **educational and internship purposes**.
