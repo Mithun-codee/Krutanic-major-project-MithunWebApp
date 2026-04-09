@@ -28,7 +28,17 @@ https://mithun-webapp-e2gtgfbad9h2czbc.centralindia-01.azurewebsites.net
 
 The application is publicly accessible and deployed on **Azure App Service**.
 
----
+GitHub repo :
+<img width="1919" height="1079" alt="Screenshot 2026-04-05 132604" src="https://github.com/user-attachments/assets/c2de6603-dabe-43fd-90c4-2ec916d71090" />
+
+Azure WebApp :
+---<img width="1919" height="1079" alt="Screenshot 2026-04-05 132304" src="https://github.com/user-attachments/assets/bca36129-6155-47ec-8537-c7c4e1cf967e" />
+
+GitHub Actions :
+<img width="1919" height="1079" alt="Screenshot 2026-04-05 132801" src="https://github.com/user-attachments/assets/cdb6aadb-be07-43a5-be67-8e947363f0b9" />
+
+Live WebApp :
+<img width="1919" height="1079" alt="Screenshot 2026-04-05 132618" src="https://github.com/user-attachments/assets/bc7de64d-b87c-459d-b66c-1109eee9d870" />
 
 # 🧰 Technologies Used
 
